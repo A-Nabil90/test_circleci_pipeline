@@ -10,9 +10,9 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - checkout
+      - run: npm i
       - run: npm install gulp-sass --save-dev
       - run: npm install node-sass@latest
-      - run: npm i
       # - save cache:
       #     key:  "npm packages"
       #     paths:
