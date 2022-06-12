@@ -33,7 +33,6 @@ jobs:
       - image: cimg/node:13:8:0
     steps:
       - checkout
-      - run: npm i
       - restore cache:
           keys:
             - "npm packages"
